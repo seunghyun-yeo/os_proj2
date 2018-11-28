@@ -46,17 +46,10 @@ typedef struct{
         int ttbr;
 } pcb;
 
-typedef struct{
-	int page_index;
-	int page_fn;
-	int sc;
-	int full;
-} transbuf;
 
 msgbuf msg;
 msgbuf2 raw_page;
 pcb* pcbdata;
-transbuf* tlb;
 
 void signal_handler(int signo)
 {
